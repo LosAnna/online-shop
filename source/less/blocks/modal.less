@@ -1,0 +1,139 @@
+.modal {
+  position: fixed;
+  z-index: 10;
+  display: none;
+}
+
+.modal__form {
+  border-top: 1px solid #c7c7c7;
+  border-bottom: 1px solid #c7c7c7;
+  position: fixed;
+  z-index: 2;
+  background-color: #ffffff;
+  top: 25%;
+  box-shadow: 0 7px 7px 0 #ececec;
+  width: 100%;
+}
+
+.modal__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__description,
+.modal__list {
+  align-self: center;
+}
+
+.modal__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  width: 150px;
+  margin-top: 30px;
+  margin-left: 56px;
+  margin-bottom: 0;
+}
+
+.modal__description {
+  .font-size-height();
+  font-weight: 400;
+  color: #444444;
+  margin-top: 12px;
+}
+
+.modal__list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-left: 6px;
+  margin-bottom: 31px;
+}
+
+.modal__label {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #444444;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  display: block;
+  width: 82px;
+  height: 52px;
+  padding-top: 16px;
+  text-align: center;
+}
+
+.modal__label:hover {
+  border: 2px solid rgba(68, 68, 68, 0.3);
+}
+
+.modal__input:checked + .modal__label {
+  border: 2px solid #f50056;
+}
+
+.modal__btn {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #f50056;
+  border: 2px solid #f50056;
+  text-transform: uppercase;
+  height: 52px;
+  margin-bottom: 46px;
+}
+
+.modal__item {
+  margin-right: 7px;
+  margin-top: 8px;
+}
+
+.modal__open {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .modal__form {
+    width: 568px;
+    height: 336px;
+    margin: 0 auto;
+    border: 1px solid #c7c7c7;
+    left: 13%;
+    right: 13%;
+  }
+
+  .modal__wrapper {
+    width: 556px;
+    height: 336px;
+    margin: 0 auto;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 57px;
+    width: auto;
+    margin-top: 32px;
+    margin-left: 3px;
+  }
+
+  .modal__description {
+    font-size: 17px;
+    margin-top: 14px;
+    margin-bottom: 13px;
+  }
+
+  .modal__label {
+    width: 112px;
+  }
+
+  .modal__btn {
+    width: 350px;
+    margin-left: 73px;
+  }
+}

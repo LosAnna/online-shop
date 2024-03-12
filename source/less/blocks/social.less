@@ -1,0 +1,39 @@
+.social {
+  list-style: none;
+  padding: 0;
+  margin-left: 57px;
+  margin-top: 28px;
+}
+
+.social__item {
+  margin-right: 24px;
+  display: inline-block;
+}
+
+.social__item:nth-child(2) {
+  margin-right: 24px;
+  margin-top: -5px;
+}
+
+.social__link {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  font-size: 0;
+}
+
+.social__link:hover svg,
+.social__link:focus svg {
+  fill: rgba(245, 0, 86, 1);
+}
+
+.social__link:active svg {
+  fill: rgba(245, 0, 86, .3);
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    margin-left: 154px;
+    margin-top: 63px;
+  }
+}

@@ -1,0 +1,207 @@
+.promo {
+  margin: 0 auto;
+  background-color: #fafafa;
+  background-image: url("../img/background-hero.jpg");
+  background-repeat: no-repeat;
+  // background-position: 50% -11%;
+  // background-size: 573px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 5px;
+
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("../img/background-hero.jpg");
+  }
+}
+
+.promo__wrapper {
+  margin: 0 auto;
+  min-height: 286px;
+  text-align: center;
+  width: 245px;
+}
+
+.promo__description {
+  color: #010000;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-top: 74px;
+  display: block;
+}
+
+.promo__list {
+  list-style: none;
+}
+
+.promo__link {
+  position: relative;
+  display: block;
+  color: #000;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  min-height: 103px;
+  padding-left: 8.75%;
+  padding-top: 25px;
+}
+
+.promo__link svg {
+  position: absolute;
+  top: 22px;
+  right: 11.25%;
+  fill: rgba(20, 144, 128, 0.5);
+}
+.promo__link svg path {
+  fill: rgba(245, 0, 86, .5);
+}
+.promo__link:last-child svg {
+  top: 22px;
+  right: 8.43%;
+}
+
+.promo__link:first-child {
+  background-color: #fff9e8;
+}
+
+.promo__link:last-child {
+  background-color: #ffebb4;
+}
+
+.promo__link:hover svg,
+.promo__link:focus svg {
+  fill: rgba(20, 144, 128, 0.7);
+}
+.promo__link:hover svg path,
+.promo__link:focus svg path {
+  fill: rgba(245, 0, 86, .7);
+}
+.promo__link:active svg {
+  fill: rgba(20, 144, 128, 0.3);
+}
+
+.promo__link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.promo__svg svg {
+  fill: rgba(20, 144, 128);
+}
+
+.promo__transform {
+  width: 175px;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    background-image: url("../img/background-hero.jpg");
+    // background-size: 1150px auto;
+    width: auto;
+    margin: 0;
+    margin-top: -1px;
+    min-height: 745px;
+    border-top: 1px solid #e7e7e7;
+    justify-content: stretch;
+    position: relative;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/background-hero.jpg");
+    }
+  }
+
+  .promo__wrapper {
+    margin: 0;
+    margin-bottom: 338px;
+    width: auto;
+  }
+
+  .promo::after {
+    content: "";
+    background-image: url("../img/bg-zigzag-fill.svg");
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: -1px;
+    display: block;
+    background-repeat: repeat-x;
+    background-position-x: 82%;
+    background-size: 768px 25px;
+  }
+
+  .promo__list {
+    display: flex;
+    margin: 0 50px;
+  }
+
+  .promo__link {
+    flex-grow: 1;
+    font-size: 20px;
+    line-height: 30px;
+    min-height: 125px;
+    padding-left: 35px;
+    padding-top: 27px;
+    width: 344px;
+  }
+
+  .promo__link:hover {
+    transform: translateY(-5px);
+    transition: 0.2s;
+  }
+
+  .promo__link:last-child {
+    padding-left: 35px;
+  }
+
+  .promo__link svg {
+    position: absolute;
+    top: 30px;
+    right: 37px;
+  }
+
+  .promo__link:last-child svg {
+    top: 32px;
+    right: 34px;
+  }
+
+  .promo__description {
+    font-size: 43px;
+    line-height: 50px;
+    margin-top: 114px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    background-image: url("../img/background-hero.jpg");
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/background-hero.jpg");
+    }
+  }
+
+  .promo__wrapper {
+    width: 1050px;
+    margin: 0 auto;
+    margin-bottom: 338px;
+  }
+
+  .promo__list {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .promo__description {
+    font-size: 53px;
+    line-height: 57px;
+    margin-top: 74px;
+  }
+
+  .promo::after {
+    height: 29px;
+    background-size: auto 37px;
+    top: 728px;
+    background-position-x: 113%;
+  }
+}
