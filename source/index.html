@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Добро пожаловать!</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+  <header class="page-header">
+    <nav class="menu menu--nojs">
+      <div class="menu__block">
+        <a href="#" class="menu__logo">
+          <picture>
+            <source media="(min-width:1150px)" srcset="img/new-logo.png">
+            <source media="(min-width:768px)" srcset="img/new-logo.png">
+            <img class="menu__image" src="img/new-logo.png" alt="Логотип магазина" width="149" height="72">
+          </picture>
+        </a>
+        <button class="menu__toggle" type="button">Открыть меню</button>
+      </div>
+      <ul class="menu__list">
+        <li class="menu__item"><a href="catalog.html" class="menu__link">Каталог товаров</a></li>
+      </ul>
+      <ul class="menu__interactive">
+        <li class="menu__item"><a href="#" class="menu__link menu__link--search">
+            <svg width="17" height="17">
+              <use xlink:href="#icon-search"></use>
+            </svg>
+            Поиск по сайту</a></li>
+        <li class="menu__item"><a href="#" class="menu__link menu__link--basket">
+            <svg width="20" height="18">
+              <use xlink:href="#icon-cart"></use>
+            </svg>
+            Корзина: пока пуста</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Магазин "Продукты долголетия" - товары для Вашего здоровья, созданные самой природой.</h1>
+    <section class="promo">
+      <div class="promo__wrapper">
+        <h2 class="visually-hidden">Промо магазина</h2>
+        <div class="extra-menu">
+          <ul class="extra-menu__list extra-menu__list--hidden">
+            <li class="extra-menu__item"><a class="extra-menu__link" href="#">Новые поступления</a></li>
+            <li class="extra-menu__item"><a class="extra-menu__link extra-menu__link--decor" href="#">Распродажа</a>
+            </li>
+          </ul>
+          <p class="extra-menu__delivery">Бесплатная доставка по России</p>
+        </div>
+        <b class="promo__description">РАДЫ ПРИВЕТСТВОВАТЬ ВАС<br>В НАШЕМ ИНТЕРНЕТ-МАГАЗИНЕ! </b>
+      </div>
+      <div class="promo__list">
+        <a class="promo__link" href="#">
+          <div class="promo__transform">Подарки, сувениры</div>
+          <svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M27.9254 14.066H30.9804C31.5312 14.066 31.9775 13.6181 31.9775 13.0688V8.45482C31.9775 7.90446 31.5312 7.45654 30.9804 7.45654H27.9254C27.3746 7.45654 26.9277 7.90446 26.9277 8.45482V13.0688C26.9278 13.6182 27.3746 14.066 27.9254 14.066Z"
+              fill="black" />
+            <path
+              d="M25.4095 14.0259C25.634 13.7956 25.7698 13.4903 25.8305 13.1998C25.8933 12.9061 25.9076 12.6093 25.9086 12.2564C25.9086 10.2622 25.9086 8.43354 25.9086 7.93389V7.38468C24.0758 6.48677 22.1264 4.48193 20.6613 3.04956C19.9272 2.33546 19.2083 1.65315 18.4447 1.10809C17.6831 0.565109 16.8612 0.146809 15.9338 0.0411387C15.6819 0.0137129 15.4415 0 15.2119 0C14.51 0 13.9035 0.128832 13.3966 0.360223C12.634 0.702469 12.1258 1.27495 11.8364 1.84652C11.5449 2.42015 11.4472 2.98849 11.4451 3.44689C11.4472 3.84721 11.3537 4.57181 11.1251 5.37153C10.8984 6.17645 10.5372 7.06905 10.0266 7.86336C9.58649 8.54889 9.27755 9.28731 9.27547 10.0837C9.27029 10.7471 9.51631 11.4242 9.99857 11.9873C10.4807 12.5556 11.1726 13.0277 12.098 13.4407C14.92 14.6935 17.6158 15.1922 20.0024 15.1922C21.5436 15.1922 22.957 14.9852 24.1976 14.6408C24.4581 14.569 24.6911 14.4951 24.9197 14.3799C25.0912 14.2931 25.2622 14.1801 25.4095 14.0259ZM12.0074 11.7094C11.6139 11.4749 11.3246 11.2404 11.1407 11.0217C10.8624 10.6858 10.7757 10.4069 10.7714 10.0837C10.7683 9.69928 10.9358 9.2123 11.2848 8.67242C11.896 7.72082 12.3033 6.7003 12.5651 5.78027C12.618 5.59013 12.6623 5.40853 12.703 5.2268C12.9786 5.49922 13.305 5.73913 13.6553 5.96522C13.5253 7.9552 12.7907 10.0404 12.0074 11.7094ZM13.6089 4.01396C13.0051 3.50266 13.1435 2.66825 13.2454 2.43271L13.2296 2.42534C13.3326 2.24995 13.4662 2.08632 13.6426 1.94781C13.9607 1.69971 14.4264 1.50001 15.2119 1.49782C15.3824 1.49782 15.5678 1.50727 15.768 1.52847C16.3384 1.59093 16.9305 1.86553 17.5759 2.32612C18.5409 3.01269 19.576 4.09854 20.7428 5.2162C21.3723 5.81726 22.0463 6.4257 22.7824 6.98459C22.0278 6.94552 21.0728 6.83674 19.9071 6.59901C18 6.2124 16.2232 5.67794 14.9916 5.02514C14.3747 4.70272 13.9495 4.30124 13.6089 4.01396Z"
+              fill="black" />
+            <path
+              d="M46.9028 13.4406C47.8276 13.0276 48.5195 12.5555 49.0012 11.9871C49.4839 11.4241 49.7301 10.747 49.7243 10.0836C49.7221 9.2872 49.4131 8.54878 48.9733 7.86325C48.4626 7.06882 48.1018 6.17622 47.8746 5.37142C47.646 4.57169 47.5536 3.8471 47.5545 3.44678C47.5536 2.98837 47.4552 2.42004 47.1632 1.8464C46.8737 1.27495 46.3656 0.702354 45.6029 0.360107C45.0966 0.128832 44.4901 0 43.7882 0C43.5578 0 43.3176 0.0137129 43.0657 0.0411387C42.1393 0.146809 41.3164 0.565109 40.5553 1.10809C39.7916 1.65315 39.0733 2.33546 38.3386 3.04956C36.8736 4.48193 34.9236 6.48677 33.0918 7.38468V7.93389C33.0918 8.43354 33.0918 10.2621 33.0918 12.2564C33.0918 12.6093 33.1061 12.9061 33.1695 13.1998C33.2307 13.4901 33.3655 13.7955 33.59 14.0259C33.7378 14.1801 33.9085 14.293 34.08 14.3796C34.3098 14.4949 34.5417 14.5687 34.8031 14.6405C36.0432 14.985 37.4561 15.1919 38.9978 15.1919C41.3851 15.192 44.0797 14.6934 46.9028 13.4406ZM43.7882 1.49782C44.5731 1.50001 45.0394 1.69971 45.3568 1.94781C45.5332 2.08632 45.6673 2.24995 45.7698 2.42534L45.754 2.43271C45.8558 2.66825 45.9942 3.50278 45.3905 4.01396C45.0505 4.30124 44.6247 4.70271 44.0084 5.02491C42.7762 5.67771 40.9995 6.21217 39.0923 6.59878C37.9267 6.83651 36.9716 6.94541 36.218 6.98436C36.9536 6.42558 37.6271 5.81715 38.2566 5.21597C39.4239 4.09843 40.4586 3.01246 41.4239 2.32589C42.0688 1.8653 42.6616 1.5907 43.2313 1.52824C43.4317 1.50727 43.6171 1.49782 43.7882 1.49782Z"
+              fill="black" />
+            <path d="M34.6412 17.0195H24.3594V29.442H34.6412V17.0195Z" fill="black" />
+            <path d="M22.2162 17.0195H3.87891V29.442H22.2162V17.0195Z" fill="black" />
+            <path d="M55.1211 17.0195H36.7832V29.442H55.1211V17.0195Z" fill="black" />
+            <path d="M22.2172 31.1562H5.59375V58.9999H22.2172V31.1562Z" fill="black" />
+            <path d="M34.6412 31.1562H24.3594V58.9999H34.6412V31.1562Z" fill="black" />
+            <path d="M53.4071 31.1562H36.7832V58.9999H53.4071V31.1562Z" fill="black" />
+          </svg>
+        </a>
+        <a class="promo__link" href="#">
+          <div class="promo__transform">Природная косметика</div>
+          <svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M37.7327 42.5347H21.2676V58.9998H37.7327V42.5347Z" fill="black" />
+            <path d="M36.3596 24.6978H22.6387V38.4187H36.3596V24.6978Z" fill="black" />
+            <path
+              d="M30.7899 0.421526L25.3015 3.85171C24.4992 4.35321 24.0117 5.23256 24.0117 6.17875V20.5813H34.9885V2.74857C34.9885 0.59334 32.6177 -0.720908 30.7899 0.421526Z"
+              fill="black" />
+          </svg>
+        </a>
+      </div>
+    </section>
+    <section class="product-week">
+      <h2 class="product-week__title">Монастырский бальзам № 3</h2>
+      <span class="product-week__info">Товар недели</span>
+      <div class="product-week__block">
+        <p class="product-week__description">предназначен для внутреннего употребления при комплексном лечении лёгочных
+          заболеваний.</p>
+        <table class="product-week__table">
+          <tr class="product-week__row">
+            <td class="product-week__data">Артикул:</td>
+            <td class="product-week__data">029</td>
+          </tr>
+          <tr class="product-week__row">
+            <td class="product-week__data">Наличие товара:</td>
+            <td class="product-week__data">В наличии</td>
+          </tr>
+          <tr class="product-week__row">
+            <td class="product-week__data">Вес:</td>
+            <td class="product-week__data">100 гр.</td>
+          </tr>
+        </table>
+        <picture class="product-week__pic">
+          <source type="image/png" media="(min-width: 1200px)" srcset="img/product-image.png, img/product-image.png">
+          <source type="image/png" media="(min-width: 768px)" srcset="img/product-image.png, img/product-image.png">
+          <source type="image/png" srcset="img/product-image.png, img/product-image.png">
+          <source media="(min-width:1150px)" srcset="img/product-image.png, img/product-image.png">
+          <source media="(min-width:768px)" srcset="img/product-image.png, img/product-image.png">
+          <img class="product-week__img" src="img/product-image.png" srcset="img/product-image.png" alt="Фото товара"
+            width="260" height="315">
+        </picture>
+        <p class="product-week__price">Цена: 300 руб.</p>
+        <a class="btn product-week__btn btn-order" href="#" title="Заказать товар">Заказать</a>
+      </div>
+    </section>
+    <section class="features">
+      <h2 class="features__title">Коротко о нас:</h2>
+      <ul class="features__list">
+        <li class="features__item features__item-flow">
+          <p class="features__description">Экологически чистые ингредиенты</p>
+        </li>
+        <li class="features__item features__item-money">
+          <p class="features__description">Представляем широкий ассортимент</p>
+        </li>
+        <li class="features__item features__item-heart">
+          <p class="features__description">Находимся в г. Санкт-Петербург.</p>
+        </li>
+        <li class="features__item features__item-ball">
+          <p class="features__description">Мы работаем для Вас с 2004 года</p>
+        </li>
+        <li class="features__item features__item-rocket">
+          <p class="features__description">Поддержка отечественного производителя</p>
+        </li>
+        <li class="features__item features__item-gift">
+          <p class="features__description">Готовы ответить на любые Ваши вопросы</p>
+        </li>
+      </ul>
+    </section>
+    <section class="reviews">
+      <h2 class="reviews__title">Отзывы</h2>
+      <blockquote class="reviews__slider">
+        <p class="reviews__text">Я молодая мама, и у моего малыша была сильная ангина. Ничего не помогало от слова
+          совсем, но случилось чудо!!! Мы решили попробовать монастырский бальзам и кашель прошёл буквально за пару
+          часов. Всем рекомендую.
+        </p>
+        <div class="reviews__author-btn-wrap">
+          <cite class="reviews__author">Анастасия Красильникова
+            <a href="#" class="reviews__link">@misssssiskras</a>
+          </cite>
+          <div class="reviews__btn-wrap">
+            <button class="reviews__btn reviews__btn-previous" type="button" title=">Предыдущий отзыв">
+              <svg width="50" height="26">
+                <use xlink:href="#icon-left-arrow"></use>
+              </svg>Предыдущий отзыв</button>
+            <button class="reviews__btn reviews__btn-next" type="button" title="Следующий отзыв">
+              <svg width="50" height="26">
+                <use xlink:href="#icon-right-arrow"></use>
+              </svg>Следующий отзыв</button>
+          </div>
+        </div>
+      </blockquote>
+      <a class="btn reviews__btn-feedback" href="#">Написать</a>
+    </section>
+    <section class="contacts">
+      <div class="contacts__container">
+        <h2 class="contacts__title">Контакты</h2>
+        <dl class="contacts__email">
+          <dt class="contacts__term">e-mail:</dt>
+          <dd class="contacts__defenition"><a href="mailto:apikedr@yandex.ru">apikedr@yandex.ru</a></dd>
+        </dl>
+        <dl class="contacts__address">
+          <dt class="contacts__term">адрес:</dt>
+          <dd class="contacts__defenition">Россия, Санкт-Петербург</dd>
+        </dl>
+      </div>
+      <div class="contacts__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1573553909041!5m2!1sru!2sru"
+          style="border:0;" allowfullscreen=""></iframe>
+      </div>
+      <a class="btn contacts__btn-feedback" href="#">Напишите нам</a>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <a class="footer__logo">
+        <!-- <svg width="101" height="34">
+            <use xlink:href="#logo-footer"></use>
+          </svg> -->
+        <img src="./img/new-logo.png" alt="logo">
+      </a>
+      <ul class="social">
+        <li class="social__item"><a href="#" class="social__link social__link---inst" title="Instagram">
+            <svg width="21" height="21">
+              <use xlink:href="#icon-insta"></use>
+            </svg>Инстаграм</a></li>
+        <li class="social__item"><a href="#" class="social__link social__link--fb" title="Facebook">
+            <svg width="14" height="27">
+              <use xlink:href="#icon-fb"></use>
+            </svg>Фейсбук</a></li>
+        <li class="social__item"><a href="#" class="social__link social__link--tw" title="Twitter">
+            <svg width="23" height="20">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>
+            Твиттер</a></li>
+      </ul>
+    </div>
+  </footer>
+  <div class="modal-overlay"></div>
+  <div class="modal">
+    <form class="modal__form" action="" method="POST">
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__description">Выберите количество:</p>
+        <ul class="modal__list">
+          <li class="modal__item">
+            <input type="radio" class="modal__input visually-hidden" checked id="s" name="size" value="1">
+            <label for="s" class="modal__label">1</label>
+          </li>
+          <li class="modal__item">
+            <input type="radio" class="modal__input visually-hidden" id="m" name="size" value="2">
+            <label for="m" class="modal__label">2</label>
+          </li>
+          <li class="modal__item">
+            <input type="radio" class="modal__input visually-hidden" id="l" name="size" value="3">
+            <label for="l" class="modal__label">3</label>
+          </li>
+        </ul>
+        <button class="modal__btn" type="submit" title="Добавить в корзину">Добавить</button>
+      </div>
+    </form>
+  </div>
+  <script src="js/script.js"></script>
+  <script src="js/picturefill.min.js"></script>
+</body>
+
+</html>

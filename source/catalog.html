@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог товаров</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="page-header">
+      <nav class="menu menu--nojs">
+        <div class="menu__block">
+          <a href="#" class="menu__logo">
+            <picture>
+              <source media="(min-width:1150px)" srcset="img/new-logo.png">
+              <source media="(min-width:768px)" srcset="img/new-logo.png">
+              <img class="menu__image" src="img/new-logo.png" alt="Логотип магазина" width="149" height="72">
+            </picture>
+          </a>
+          <button class="menu__toggle" type="button">Открыть меню</button>
+        </div>
+        <ul class="menu__list">
+          <li class="menu__item"><a href="catalog.html" class="menu__link">Каталог товаров</a></li>
+        </ul>
+        <ul class="menu__interactive">
+          <li class="menu__item"><a href="#" class="menu__link menu__link--search">
+            <svg width="17" height="17">
+              <use xlink:href="#icon-search"></use>
+            </svg>
+            Поиск по сайту</a></li>
+          <li class="menu__item"><a href="#" class="menu__link menu__link--basket">
+            <svg width="20" height="18">
+              <use xlink:href="#icon-cart"></use>
+            </svg>
+            Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Каталог товаров</h1>
+      <div class="intro">
+        <div class="extra-menu">
+          <ul class="extra-menu__list extra-menu__list--hidden">
+            <li class="extra-menu__item"><a class="extra-menu__link" href="#">Новые поступления</a></li>
+            <li class="extra-menu__item"><a class="extra-menu__link extra-menu__link--decor" href="#">Распродажа</a></li>
+          </ul>
+          <p class="extra-menu__delivery">Бесплатная доставка по России</p>
+        </div>
+        <h2 class="intro__title">Каталог товаров</h2>
+      </div>
+      <section class="goods">
+        <h2 class="visually-hidden">Товары</h2>
+        <ul class="goods__list">
+          <li class="goods__item">
+            <a href="#" class="goods__image-link">
+              <picture class="goods__pictures">
+                <source type="image/jpg" media="(min-width: 1200px)" srcset="img/product-catalog-1.jpg, img/product-catalog-1.jpg">
+                <source type="image/jpg" media="(min-width: 768px)" srcset="img/product-catalog-1.jpg, img/product-catalog-1.jpg">
+                <source type="image/jpg" srcset="img/product-catalog-1.jpg, img/product-catalog-1.jpg">
+                <source media="(min-width:1150px)" srcset="img/product-catalog-1.jpg, img/product-catalog-1.jpg">
+                <source media="(min-width:768px)" srcset="img/product-catalog-1.jpg, img/product-catalog-1.jpg">
+                <img src="img/product-catalog-1.jpg" srcset="img/product-catalog-1.jpg" alt="СИРОП «ШИПОВНИК»" class="goods__img" width="260" height="195">
+              </picture>
+            </a>
+            <div class="goods__wrap">
+              <h3 class="goods__title"><a class="goods__link" href="#">СИРОП «ШИПОВНИК»</a></h3>
+              <p class="goods__description">Артикул: 044.10,<br>Форма выпуска: 250 мл</p>
+              <div class="goods__price-basket-wrap">
+                <p class="goods__price">400 руб.</p>
+                <a class="goods__basket btn-order" href="#">
+                  <svg width="20" height="18">
+                    <use xlink:href="#icon-cart"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="goods__item">
+            <a href="#" class="goods__image-link">
+              <picture class="goods__pictures">
+                <source type="image/jpg" media="(min-width: 1200px)" srcset="img/product-catalog-2.jpg, img/product-catalog-2.jpg">
+                <source type="image/jpg" media="(min-width: 768px)" srcset="img/product-catalog-2.jpg, img/product-catalog-2.jpg">
+                <source type="image/jpg" srcset="img/product-catalog-2.jpg, img/product-catalog-2.jpg">
+                <source media="(min-width:1150px)" srcset="img/product-catalog-2.jpg, img/product-catalog-2.jpg">
+                <source media="(min-width:768px)" srcset="img/product-catalog-2.jpg, img/product-catalog-2.jpg">
+                <img src="img/product-catalog-2.jpg" srcset="img/product-catalog-2.jpg" alt="СИРОП «ПУСТЫРНИК»" class="goods__img" width="260" height="195">
+              </picture>
+            </a>
+            <div class="goods__wrap">
+              <h3 class="goods__title"><a class="goods__link" href="#">СИРОП «ПУСТЫРНИК»</a></h3>
+              <p class="goods__description">Артикул: 044.6,<br>Форма выпуска: 250 мл.</p>
+              <div class="goods__price-basket-wrap">
+                <p class="goods__price">400 руб.</p>
+                <a class="goods__basket btn-order" href="#">
+                  <svg width="20" height="18">
+                    <use xlink:href="#icon-cart"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="goods__item">
+            <a href="#" class="goods__image-link">
+              <picture class="goods__pictures">
+                <source type="image/jpg" media="(min-width: 1200px)" srcset="img/product-catalog-3.jpg, img/product-catalog-3.jpg">
+                <source type="image/jpg" media="(min-width: 768px)" srcset="img/product-catalog-3.jpg, img/product-catalog-3.jpg">
+                <source type="image/jpg" srcset="img/product-catalog-3.jpg, img/product-catalog-3.jpg">
+                <source media="(min-width:1150px)" srcset="img/product-catalog-3.jpg, img/product-catalog-3.jpg">
+                <source media="(min-width:768px)" srcset="img/product-catalog-3.jpg, img/product-catalog-3.jpg">
+                <img src="img/product-catalog-3.jpg" srcset="img/product-catalog-3.jpg" alt="СИРОП «ПУСТЫРНИК»" class="goods__img" width="260" height="195">
+              </picture>
+            </a>
+            <div class="goods__wrap">
+              <h3 class="goods__title"><a class="goods__link" href="#">СИРОП «ЧЕРНИКА»</a></h3>
+              <p class="goods__description">Артикул: 044.8,<br>Форма выпуска: 250 мл.</p>
+              <div class="goods__price-basket-wrap">
+                <p class="goods__price">440 руб.</p>
+                <a class="goods__basket btn-order" href="#">
+                  <svg width="20" height="18">
+                    <use xlink:href="#icon-cart"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <section class="video-block">
+          <h2 class="video-block__title">Процесс производства</h2>
+          <div class="video-block__play-btn-wrap">
+            <button class="video-block__play-btn" type="button">
+              <!-- <svg width="100" height="76">
+                <use xlink:href="#icon-play"></use>
+              </svg> -->
+              <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3564_11767)">
+                <path d="M49.9995 0.0454427C40.1194 0.0454427 30.4612 2.97523 22.2462 8.46431C14.0313 13.9534 7.62846 21.7552 3.84751 30.8832C0.0665666 40.0112 -0.922701 50.0554 1.00481 59.7457C2.93232 69.4359 7.69003 78.337 14.6763 85.3233C21.6626 92.3095 30.5636 97.0672 40.2539 98.9947C49.9441 100.922 59.9883 99.933 69.1163 96.152C78.2443 92.3711 86.0462 85.9683 91.5353 77.7533C97.0243 69.5383 99.9541 59.8801 99.9541 50C99.9842 43.4315 98.7126 36.9221 96.2128 30.8477C93.713 24.7734 90.0345 19.2545 85.3898 14.6098C80.7451 9.96506 75.2262 6.28658 69.1518 3.78678C63.0775 1.28697 56.5681 0.0153803 49.9995 0.0454427ZM74.0686 51.5895L36.6026 74.5232C35.2402 75.4315 34.1049 74.7503 34.1049 73.1608V26.8393C34.1049 25.2498 35.2402 24.5686 36.6026 25.4769L74.0686 48.4106C74.3525 48.5677 74.5891 48.7979 74.7539 49.0775C74.9187 49.357 75.0057 49.6755 75.0057 50C75.0057 50.3245 74.9187 50.6431 74.7539 50.9226C74.5891 51.2021 74.3525 51.4324 74.0686 51.5895Z" fill="#F50056"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_3564_11767">
+                <rect width="100" height="100" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+              Включить видео
+            </button>
+            <picture>
+              <source type="image/jpg" media="(min-width: 1200px)" srcset="img/inside-beer.jpg, img/inside-beer.jpg">
+              <source type="image/jpg" media="(min-width: 768px)" srcset="img/inside-beer.jpg, img/inside-beer.jpg">
+              <source type="image/jpg" srcset="img/inside-beer.jpg, img/inside-beer.jpg">
+              <source media="(min-width:1150px)" srcset="img/inside-beer.jpg, img/inside-beer.jpg">
+              <source media="(min-width:768px)" srcset="img/inside-beer.jpg, img/inside-beer.jpg">
+              <img src="img/inside-beer.jpg" srcset="img/inside-beer.jpg" alt="Видео" class="goods__img" width="260" height="195">
+            </picture>
+          </div>
+          <p class="video-block__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="btn video-block__order-btn btn-order" href="#">Сделать заказ</a>
+        </section>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <a class="footer__logo">
+          <!-- <svg width="101" height="34">
+            <use xlink:href="#logo-footer"></use>
+          </svg> -->
+          <img src="./img/new-logo.png" alt="logo">
+        </a>
+        <ul class="social">
+          <li class="social__item"><a href="#" class="social__link social__link---inst" title="Instagram">
+            <svg width="21" height="21">
+              <use xlink:href="#icon-insta"></use>
+            </svg>Инстаграм</a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--fb" title="Facebook">
+            <svg width="14" height="27">
+              <use xlink:href="#icon-fb"></use>
+            </svg>Фейсбук</a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--tw" title="Twitter">
+            <svg width="23" height="20">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>
+              Твиттер</a></li>
+        </ul>
+      </div>
+    </footer>
+    <div class="modal-overlay"></div>
+    <div class="modal">
+      <form class="modal__form" action="" method="POST">
+        <div class="modal__wrapper">
+          <h2 class="modal__title">Добавить в корзину</h2>
+          <p class="modal__description">Выберите количество:</p>
+          <ul class="modal__list">
+            <li class="modal__item">
+              <input type="radio" class="modal__input visually-hidden" checked id="s" name="size" value="1">
+              <label for="s" class="modal__label">1</label>
+            </li>
+            <li class="modal__item">
+              <input type="radio" class="modal__input visually-hidden" id="m" name="size" value="2">
+              <label for="m" class="modal__label">2</label>
+            </li>
+            <li class="modal__item">
+              <input type="radio" class="modal__input visually-hidden" id="l" name="size" value="3">
+              <label for="l" class="modal__label">3</label>
+            </li>
+          </ul>
+          <button class="modal__btn" type="submit" title="Добавить в корзину">Добавить</button>
+        </div>
+      </form>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/picturefill.min.js"></script>
+  </body>
+</html>
